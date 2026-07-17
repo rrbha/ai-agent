@@ -21,7 +21,6 @@ def get_files_info(working_directory: str, directory: str = ".") -> str:
               fin_list.append(f'- {i}: file_size={size} bytes, is_dir={is_dir}')
         result = "\n".join(fin_list)
         return result
-        #return f'Success: "{directory}" is within the working directory'
     except Exception as e:
         return f'Error: {e}'
 schema_get_files_info = types.FunctionDeclaration(
